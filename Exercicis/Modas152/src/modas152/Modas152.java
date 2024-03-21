@@ -1,6 +1,5 @@
 package modas152;
 
-import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -68,28 +67,7 @@ public class Modas152 {
             quicksort(arr, pivotIndex + 1, end);
         }
     }
-
-    /**
-     * Este método genera el pivote para el algoritmo de quicksort.
-     * Este consiste en seleccionar el valor medio entre el primer, último y valor central del array.
-     * Luego, se ordenan los valores de forma que el pivote quede en la posición correcta.
-     * 
-     * Orden de complejidad O(1).
-     * 
-     * @param arr Array de enteros.
-     * @param start Índice de inicio.
-     * @param end Índice de fin.
-     * @return Índice del pivote.
-     */
-    private static int generatePivot(int[] arr, int start, int end) {
-        int mid = (start + end) / 2; 
-        if (arr[mid] < arr[start]) swap(arr, mid, start);
-        if (arr[end] < arr[start]) swap(arr, end, start);
-        if (arr[end] < arr[mid]) swap(arr, end, mid);
-        swap(arr, mid, end);
-        return partition(arr, start, end);
-    }
-
+    
     /**
      * Este método ordena los valores de un array de forma que los valores menores al 
      * pivote queden a la izquierda y los mayores a la derecha. Seguidamente, se coloca
@@ -110,6 +88,27 @@ public class Modas152 {
         }
         swap(arr, i + 1, end);
         return i + 1;
+    }
+    
+    /**
+     * Este método genera el pivote para el algoritmo de quicksort.
+     * Este consiste en seleccionar el valor medio entre el primer, último y valor central del array.
+     * Luego, se ordenan los valores de forma que el pivote quede en la posición correcta.
+     * 
+     * Orden de complejidad O(1).
+     * 
+     * @param arr Array de enteros.
+     * @param start Índice de inicio.
+     * @param end Índice de fin.
+     * @return Índice del pivote.
+     */
+    private static int generatePivot(int[] arr, int start, int end) {
+        int mid = (start + end) / 2; 
+        if (arr[mid] < arr[start]) swap(arr, mid, start);
+        if (arr[end] < arr[start]) swap(arr, end, start);
+        if (arr[end] < arr[mid]) swap(arr, end, mid);
+        swap(arr, mid, end);
+        return partition(arr, start, end);
     }
 
     /**
