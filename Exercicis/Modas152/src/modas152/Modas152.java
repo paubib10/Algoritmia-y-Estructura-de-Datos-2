@@ -24,7 +24,7 @@ public class Modas152 {
                 values[i] = sc.nextInt();
             }
     
-            // O(n log n)
+            // Ordenar los valores O(n log n)
             quicksort(values, 0, numValues - 1);
             
             int maxFrequency = 0, mode = -1, currentFrequency = 1;
@@ -69,8 +69,9 @@ public class Modas152 {
     }
     
     /**
-     * Este método ordena los valores de un array de forma que los valores menores al 
-     * pivote queden a la izquierda y los mayores a la derecha. Seguidamente, se coloca
+     * Este método ordena los valores de un array de forma que los 
+     * valores menores al pivote queden a la izquierda y los mayores
+     * a la derecha. Seguidamente, se coloca
      * el pivote en su posición correcta.
      * 
      * Orden de complejidad O(n).
@@ -92,8 +93,10 @@ public class Modas152 {
     
     /**
      * Este método genera el pivote para el algoritmo de quicksort.
-     * Este consiste en seleccionar el valor medio entre el primer, último y valor central del array.
-     * Luego, se ordenan los valores de forma que el pivote quede en la posición correcta.
+     * Este consiste en seleccionar el valor medio entre el primer, 
+     * último y valor central del array.
+     * Luego, se ordenan los valores de forma que el pivote quede 
+     * en la posición correcta.
      * 
      * Orden de complejidad O(1).
      * 
@@ -126,3 +129,22 @@ public class Modas152 {
         arr[j] = temp;
     }
 }
+
+/**
+ * Este código utiliza el algoritmo Quicksort para ordenar los 
+ * valores ingresados por el usuario. 
+ * Quicksort es un algoritmo eficiente que ordena los elementos 
+ * en su lugar, es decir, no requiere espacio adicional.
+ * 
+ * En este caso, Quicksort se utiliza para calcular la moda, 
+ * que es el valor que aparece con mayor frecuencia.
+ * Para hacer esto, Quicksort ordena los valores y luego el 
+ * código recorre el array ordenado para encontrar el valor 
+ * que aparece con mayor frecuencia.
+ *
+ * La variante de Quicksort utilizada en este código es la que 
+ * utiliza el "pivote mediano de tres", que selecciona el pivote 
+ * como el valor medio entre el primer, último y valor central del array.
+ * Esta variante puede mejorar el rendimiento en arrays que 
+ * ya están parcialmente ordenados.
+ */
