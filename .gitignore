@@ -1,3 +1,6 @@
+# Ignorar la carpeta "Corregir"
+/Correccion/
+
 # Ignorar archivos ZIP
 *.zip
 /Exercicis/AeroportUIB/nbproject/private/
