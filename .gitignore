@@ -1,9 +1,13 @@
 # Ignorar la carpeta "Corregir"
 /Correccion/
+/PracticaFinal/
 
 # Ignorar archivos ZIP
 *.zip
+
 /Exercicis/AeroportUIB/nbproject/private/
 /Correccion/Correccion/nbproject/private/
 /Correccion/Correccion/build/
 /Correccion/Correccion/dist/
+/Exercicis/QuijoteReader/nbproject/private/
+/Exercicis/QuijoteReader/build/
