@@ -1,6 +1,6 @@
-# Algoritmia y Estructura de Datos I
+# Algoritmia y Estructura de Datos II
 
-Bienvenido al repositorio de Algoritmia y Estructura de Datos I. Aquí encontrarás una colección de ejercicios diseñados para mejorar tus habilidades en algorítmia y estructuras de datos.
+Bienvenido al repositorio de Algoritmia y Estructura de Datos II. Aquí encontrarás una colección de ejercicios diseñados para mejorar tus habilidades en algorítmia y estructuras de datos.
 
 ## Ejercicios
 
